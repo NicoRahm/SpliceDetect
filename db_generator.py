@@ -201,7 +201,7 @@ class Splicing_generator :
 						mod_pixel_prop[label+patch_name] = prop_mod
 						num_patch += 1
 
-		with open(target_directory + 'mod_pixel_prop' + '.pkl', 'wb') as f:
+		with open(target_directory + '/mod_pixel_prop' + '.pkl', 'wb') as f:
 			pickle.dump(mod_pixel_prop, f, pickle.HIGHEST_PROTOCOL)				
 
 if __name__ == '__main__':
@@ -210,4 +210,4 @@ if __name__ == '__main__':
 								   Q1 = 60, Q2 = 95)
 
 	generator.export(target_directory = '/home/nicolas/Database_Splicing/Test/splicing',
-					 nb_images = 10)
+					 nb_images = 100)
